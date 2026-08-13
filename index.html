@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Record Builder</title>
+</head>
+<body>
+    <header>
+        <h1>Project Record Builder</h1>
+        <button type="button">Clear form</button>
+    </header>
+
+        <div class="form">
+            <section class="block">
+                <div class="block-head">
+                    <span class="num">1</span>
+                    <h2>Identity</h2>
+                </div>
+                <div class="field">
+                    <label for="project-name">Project name (informal /contract name)</label>
+                    <input type="text" id="project-name" class="text-input">
+                </div>
+                <div class="field">
+                    <label for="client-name">Client</label>
+                    <input type="text" id="client-name" class="text-input">
+                </div>
+                <div class="field">
+                    <label for="contractor-of-record">Contractor of record (if signed under an umbrella company)</label>
+                    <input type="text" id="contractor-of-record" class="text-input">
+                </div>
+                <div class="field">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" class="text-input">
+                </div>
+                <div class="field">
+                    <label for="project-date">Project Date</label>
+                    <input type="date" id="project-date" class="text-input">
+                </div>
+            </section>
+
+            <section class="block">
+                <div class="block-head">
+                    <span class="num">2</span>
+                    <h2>Engagement</h2>
+                </div>
+                <div class="field">
+                    <label for="engagement-type">Engagement Type</label>
+                    <select id="engagement-type">
+                        <option value="">choose engagement type</option>
+                        <option value="employed">Employed</option>
+                        <option value="freelance-direct">Freelancer-Direct</option>
+                        <option value="freelance-Umbrella">Freelancer-Umbrella</option>
+                        <option value="subcontractor">Subcontractor</option>
+                    </select>
+                </div>
+
+            </section>
+
+            <section class="block">
+                <div class="block-head">
+                    <span class="num">3</span>
+                    <h2>Scope tags</h2>
+                </div>
+                <details class="tags-group" >
+                    <summary>Structural Engineering</summary>
+                        <input type="checkbox" class="tag" id="concept-design">
+                        <label for="concept-design">Concept Design</label>
+
+                        <input type="checkbox" class="tag" id="detailed-design">
+                        <label for="detailed-design">Detailed Design</label>
+
+                        <input type="checkbox" class="tag" id="structural-analysis-steel">
+                        <label for="structural-analysis-steel">Structural Analysis - Steel</label>
+
+                        <input type="checkbox" class="tag" id="structural-analysis-concrete">
+                        <label for="structural-analysis-concrete">Structural Analysis - Concrete</label>
+
+                        <input type="checkbox" class="tag" id="footing-design">
+                        <label for="footing-design">Footing & Foundation Design</label>
+
+                        <input type="checkbox" class="tag" id="tensile-structure-design">
+                        <label for="tensile-structure-design">Membrane & Tensile Analysis</label>
+
+                        <input type="checkbox" class="tag" id="cfd-analysis">
+                        <label for="cfd-analysis">Wind / CFD Analysis</label>
+
+                        <input type="checkbox" class="tag" id="specs-recommendation">
+                        <label for="specs-recommendation">Specs Recommendation</label>
+
+                        <input type="checkbox" class="tag" id="cutting-pattern">
+                        <label for="cutting-pattern">Cutting Pattern Design</label>
+
+                        <input type="checkbox" class="tag" id="shop-drawings">
+                        <label for="shop-drawings">Shop & Fabrication Drawings</label>
+
+                        <input type="checkbox" class="tag" id="submittal">
+                        <label for="submittal">Submittal / IFC</label>
+                </details>   
+
+                <details class="tag-group">
+                    <summary>Project & Site Management</summary>
+
+                    <input type="checkbox" class="tag" id="scheduling">
+                    <label for="scheduling">Scheduling</label>
+
+                    <input type="checkbox" class="tag" id="fabrication-management-supervision">
+                    <label for="fabrication-management-supervision">Fabrication Management & Supervision</label>
+                    <!-- tags to be added -->
+                     
+                </details>
+            
+
+                <details class="tag-group">
+                    <summary>Contracting & Business</summary>
+
+                    <input type="checkbox" class="tag" id="cost-estimation-quoting">
+                    <label for="cost-estimation-quoting">Cost Estimation & Quoting</label>
+                    <!-- tags to be added -->
+                     
+                </details>
+                
+   
+                <details class="tag-group">
+                    <summary>Coding & Development</summary>
+                    <input type="checkbox" class="tag" id="grasshopper-python-scripting">
+                    <label for="grasshopper-python-scripting">Grasshopper / Python Scripting</label>
+                    <!-- tags to be added -->
+                     
+                </details> 
+            </section>   
+                
+            <section class="block">
+                <div class="block-head">
+                    <span class="num">4</span>
+                    <h2>Software used</h2>
+                </div>
+                <details class="tag-group">
+                    <summary>Modeling / CAD / BIM</summary>
+                    
+                    <input type="checkbox" class="tag" id="rhino">
+                    <label for="rhino">Rhino</label>
+                    
+                    <input type="checkbox" class="tag" id="grasshopper">
+                    <label for="grasshopper">Grasshopper</label>
+
+                    <input type="checkbox" class="tag" id="autocad">
+                    <label for="autocad">AutoCAD</label>
+
+                    <input type="checkbox" class="tag" id="revit">
+                    <label for="revit">Revit</label>
+
+                    <input type="checkbox" class="tag" id="tekla">
+                    <label for="tekla">Tekla</label>
+                    <!-- tags to be added -->
+                </details>
+
+
+                <details class="tag-group">
+                    <summary>Structural Analysis / FEA</summary>
+
+                    <input type="checkbox" class="tag" id="rfem5">
+                    <label for="rfem5">RFEM 5</label>
+
+                    <input type="checkbox" class="tag" id="rfem6">
+                    <label for="rfem6">RFEM 6</label>
+
+                    <input type="checkbox" class="tag" id="idea-statica">
+                    <label for="idea-statica">Idea Statica</label>
+
+                    <input type="checkbox" class="tag" id="robot-structural">
+                    <label for="robot-structural">Robot Structural</label>
+
+                    <input type="checkbox" class="tag" id="sap2000">
+                    <label for="sap2000">SAP2000</label>
+
+                </details>
+            
+                <details class="tag-group">
+                    <summary>Fabrication / Nesting</summary>
+
+                    <input type="checkbox" class="tag" id="pronest">
+                    <label for="pronest">ProNest</label>
+
+                    <input type="checkbox" class="tag" id="cut-optimizer">
+                    <label for="cut-optimizer">Cut Optimizer</label>
+
+                </details>
+                
+                <details class="tag-group">
+                    <summary>Scripting / Documentation</summary>
+
+                    <input type="checkbox" class="tag" id="python">
+                    <label for="python">Python</label>
+
+                    <input type="checkbox" class="tag" id="matlab">
+                    <label for="matlab">MATLAB</label>
+
+                    <input type="checkbox" class="tag" id="excel">
+                    <label for="excel">Excel</label>
+
+                    <input type="checkbox" class="tag" id="word">
+                    <label for="word">Word</label>
+
+
+
+                </details>                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </section>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="record-preview">
+            <h2>Record Preview</h2>
+            <pre id="record-preview" ></pre>
+            <button type="button" id="copy"></button>
+            <button type="button" id="download .txt" class="download-txt"></button>
+
+        </div>
+
+
+
+    
+
+
+</body>
+</html>
