@@ -62,7 +62,7 @@
                     <span class="num">3</span>
                     <h2>Scope tags</h2>
                 </div>
-                <details class="tags-group" >
+                <details class="tag-group">
                     <summary>Structural Engineering</summary>
                         <input type="checkbox" class="tag" id="concept-design">
                         <label for="concept-design">Concept Design</label>
@@ -128,8 +128,15 @@
                     <!-- tags to be added -->
                      
                 </details> 
+                <div class="field">
+                    <input type="text" id="other-scope" class="text-input" placeholder="Add scope not listed">
+                    <button type="button" id="add-scope-btn" class="btn-add">Add</button>
+                </div>
+                    
             </section>   
                 
+<!-- 4. Software used -->
+
             <section class="block">
                 <div class="block-head">
                     <span class="num">4</span>
@@ -154,7 +161,6 @@
                     <label for="tekla">Tekla</label>
                     <!-- tags to be added -->
                 </details>
-
 
                 <details class="tag-group">
                     <summary>Structural Analysis / FEA</summary>
@@ -202,19 +208,120 @@
                     <input type="checkbox" class="tag" id="word">
                     <label for="word">Word</label>
 
-
-
                 </details>                
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+                <div class="field">
+                    <input type="text" id="add-software" class="text-input" placeholder="Add software not listed">
+                    <button type="button" id="add-software-btn" class="btn-add">Add</button>
+                </div>
+            </section>
+
+
+<!-- 5. Technical metrics section-->
+
+            <section class="block">
+                <div class="block-head">
+                    <span class="num">5</span>
+                    <h2>Technical metrics</h2>
+                </div>
+
+                <select id="structure-type">
+                    <option value="">choose structure type</option>
+                    <option value="str-type-steel">Steel</option>
+                    <option value="str-type-membrane">Membrane/Tensile</option>
+                    <option value="str-type-concrete">Concrete</option>
+                    <option value="str-type-other">Other</option>
+
+                </select>
+
+                <div class="field">
+                    <label for="area">Area (m²)</label>
+                    <input type="number" id="area" class="text-input">
+
+                    <label for="steel-tonnage">Steel Tonnage</label>
+                    <input type="number" id="steel-tonnage" class="text-input">
+
+                    <label for="span-height">Span Height (m)</label>
+                    <input type="number" id="span-height" class="text-input">
+
+                    <label for="windzone">Windzone</label>
+                    <input type="text" id="windzone" class="text-input">
+                </div>
+            </section>
+<!-- Financial -->
+
+            <section class="block">
+                <div class="block-head">
+                    <span class="num">6</span>
+                    <h2>Financial</h2>
+                </div>
+                <div class="field">
+                    <label for="project-value">Project Value</label>
+                    <input type="number" id="project-value" class="text-input">
+
+                </div>
+            </section>
+<!-- 7. Status -->            
+
+            <section class="block">
+                <div class="block-head">
+                    <span class="num">7</span>
+                    <h2>Status</h2>
+                </div>
+                <div class="field">
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="">choose status</option>
+                        <option value="status-completed">Completed - Signed</option>
+                        <option value="status-quoted">Quoted only - Not signed</option>
+                        <option value="status-ongoing">Ongoing</option>
+                        <option value="status-cancelled">Cancelled</option>
+                    </select>
+
+                </div>
+            </section>
+<!-- 8. Docs available -->
+
+            <section class="block">
+                <div class="block-head">
+                    <span class="num">8</span>
+                    <h2>Docs available</h2>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="tag" id="calc-report">
+                    <label for="calc-report">Calc Report</label>
+
+                    <input type="checkbox" class="tag" id="drawings">
+                    <label for="drawings">Drawings</label>
+
+                    <input type="checkbox" class="tag" id="specifications">
+                    <label for="specifications">Specifications</label>
+
+                    <input type="checkbox" class="tag" id="contract">
+                    <label for="contract">Contract</label>
+
+                    <input type="checkbox" class="tag" id="invoice">
+                    <label for="invoice">Invoice</label>
+
+                    <input type="checkbox" class="tag" id="photo">
+                    <label for="photo">Photo</label>
+                    <div class="field">
+                        <input type="text" id="other-docs" class="text-input" placeholder="Add docs not listed">
+                        <button type="button" id="add-docs-btn" class="btn-add">Add</button>
+                    </div>
+                </div>
+            </section>
+<!-- 9. Summary -->
+
+            <section class="block">
+                <div class="block-head">
+                    <span class="num">9</span>
+                    <h2>Summary</h2>
+                </div>
+                <div class="field">
+                    <label for="summary">Summary</label>
+                    <textarea id="summary" class="text-input"></textarea>
+                </div>
+
             </section>
 
 
@@ -230,7 +337,7 @@
             <h2>Record Preview</h2>
             <pre id="record-preview" ></pre>
             <button type="button" id="copy"></button>
-            <button type="button" id="download .txt" class="download-txt"></button>
+            <button type="button" id="download-txt" class="download-txt"></button>
 
         </div>
 
