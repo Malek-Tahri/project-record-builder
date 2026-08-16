@@ -1,0 +1,31 @@
+@import url(https://fonts.cdnfonts.com/css/ibm-plex-sans);
+@import url(https://fonts.cdnfonts.com/css/ibm-plex-mono);
+
+
+:root {
+    --bg: #FAFAF7;
+    --text: #1B2430;
+    --gray: #5B6674;
+    --border: #D7DCE2;
+    --blue: #2B5C8A;
+    --light-blue: #EAF1F6;
+    --orange: #B4762B;
+    --green: #3C7A5E;
+    --red: #B4453A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: var(--bg);
+    color: var(--text);
+}
